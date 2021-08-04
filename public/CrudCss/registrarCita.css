@@ -1,0 +1,115 @@
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+    --background-primary-color: white;
+    --background-secondary-color: #1a2537;
+    --background-third-color: #f0f0f0;
+    --text-primary-color: black;
+    --text-secondary-color: white;
+    --text-third-color: #555;
+    --text-hover-color: #5f9ea0;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    background-image: url(../MenuCss/img/citas.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: soft-light;
+    position: relative;
+    /* z-index: -1; */
+}
+
+main::before {
+    background-color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    content: "";
+    /* z-index: 1; */
+    height: 100%;
+    width: 100%;
+}
+
+section.citas {
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 2rem 0;
+    z-index: 10;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    border-radius: 1rem;
+    box-shadow: 0 0 0.3125rem 0.3125rem rgba(0, 0, 0, 0.03);
+    padding: 2rem;
+    z-index: 1;
+    /* z-index: 10; */
+}
+
+h2 {
+    font-size: 1.5rem !important;
+    margin: 0.5em 0;
+}
+
+label {
+    font-size: 0.8125rem;
+    color: var(--text-primary-color);
+    font-weight: bold;
+    margin: 0.5em 0 !important;
+}
+
+fieldset {
+    border: none;
+    padding: 0.625rem 0;
+    margin: 1rem 0;
+}
+
+.doctores {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.fechas {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+select {
+    padding: 0.4375em;
+    border-radius: 0.3125em;
+    background-color: var(--background-primary-color);
+}
+
+#dtp-fecha-cita {
+    padding: 0.4375em;
+    border-radius: 0.3125em;
+    border: 1px solid black;
+}
+
+button.cancelar {
+    width: 8em;
+    height: 3em;
+    border: 1px solid var(--text-hover-color);
+    margin-top: 1em;
+    border-radius: 0.3125em;
+    background-color: var(--background-primary-colors);
+}
+
+button.cancelar > a {
+    text-decoration: none;
+    color: var(--text-hover-color);
+}
+
+input.submit {
+    border: 1px solid var(--text-hover-color);
+    background-color: var(--text-hover-color);
+    width: 8em;
+    height: 3em;
+    border-radius: 0.3125em;
+    color: white;
+    cursor: pointer;
+}

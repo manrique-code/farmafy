@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url(famafy.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+.contenedor{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.formulario{
+    margin: auto;
+    background: #fff;
+    margin-top: 80px;
+    padding: 3px;
+    width: 650px;
+    border-radius: 2%;
+    
+}
+
+h1{
+    text-align: center;
+    color: #1a2537;
+    font-size: 40px;
+}
+
+.inp{
+    width: 100%;
+    padding-bottom: 15px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="password"]{
+    font-size: 20px;
+    width: 90%;
+    padding: 10px;
+    height: 100%;
+    color: #999;
+}
+
+select{
+    font-size: 20px;
+    width: 95%;
+    padding: 10px;
+    height: 100%;
+    color: #999;
+
+}
+
+#user{
+    width: 95%;
+}
+
+.input-contenedor{
+    margin-bottom: 15px;
+    width: 100%;
+    
+}
+
+.flex{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
+
+
+
+.icon{
+    width: 25px;
+    text-align: center;
+    color: #999;
+    
+}
+.button{
+    border: none;
+    width: 99%;
+    color: white;
+    font-size: 20px;
+    background:  #1a2537;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.button:hover{
+    background: cadetblue;
+}
+p{
+    text-align: center;
+}
+.link{
+    text-decoration: none;
+      color: #1a2537;
+    font-weight: 600;
+}
+.link:hover{
+     color: cadetblue;
+}
+
+
+@media screen and (max-width: 650px) {
+    .formulario{
+        width: 100%;
+        margin: 0;
+    }
+
+    body{
+        background: #fff;
+    }
+
+    .inp{
+        padding-bottom: 10px;
+    }
+
+    .flex{
+        grid-template-columns: repeat(1,auto);
+    }
+
+    select{
+        width: 90%;
+    }
+
+    #user{
+        width: 90%;
+    }
+    
+}
+
+@media screen and (max-width: 272px){
+    .icon{
+        display: none;
+    }
+    
+}

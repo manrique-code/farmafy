@@ -1,0 +1,62 @@
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+    --secondary-color: #5f9ea0;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+}
+
+.no-login {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 80px - 81px);
+    padding: 0 3.125rem;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.no-login-description {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 40%;
+    padding: 2rem;
+}
+
+.no-login-description > h3 {
+    font-size: 3rem;
+    margin-bottom: 0.5em;
+}
+
+.no-login-img-container {
+    width: 60%;
+    padding: 2rem;
+}
+
+.no-login-img {
+    width: 100%;
+}
+
+.comeback-login {
+    width: 10em;
+    padding: 1em;
+    cursor: pointer;
+    background-color: var(--secondary-color);
+    border: none;
+    box-shadow: 0 0 1em 0.3125em rgba(0, 0, 0, 0.08);
+    border-radius: 0.625em;
+}
+
+.comeback-login > a {
+    text-decoration: none;
+    color: white;
+}
+
+.acentuation {
+    color: var(--secondary-color);
+}

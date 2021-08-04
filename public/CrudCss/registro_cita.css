@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background: url(image/pexels-pixabay-40568.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.form-register {
+    width: 400px;
+    background-color: #1a2537;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    box-shadow: 7px 13px 37px #000;
+}
+
+.form-register h1 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.controller {
+    width: 100%;
+    background-color: #1a2537;
+    color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #1f53c5;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.form-register p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.form-register a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.form-register a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.form-register .botons {
+    width: 100%;
+    background-color: #1f53c5;
+    border: none;
+    padding: 12px;
+    color: #fff;
+    margin: 16px 0;
+    font-size: 16px;
+    transition: background-color 1s ease;
+}
+
+.form-register .botons:hover {
+    background-color: rgb(19, 19, 46);
+    transition: background-color 1s ease;
+}
